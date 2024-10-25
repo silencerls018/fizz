@@ -3,7 +3,7 @@ Step 1: Download the Tool
 首先，访问以下链接下载积分监控工具
 First, visit the following link to download the Points Monitoring Tool
 
-下载后，请将文件解压缩到你希望存放的任意位置。
+下载后，请将文件放到你希望存放的任意位置。
 After downloading, please unzip the file to any location you prefer.
 
 步骤 2：安装扩展
