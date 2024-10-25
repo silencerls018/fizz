@@ -1,0 +1,130 @@
+/* 基础设置 */
+body {
+    background-color: #121212; /* 深黑色背景，减轻视觉疲劳 */
+    color: white; /* 主要字体颜色为白色 */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: auto;
+}
+
+#popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1e1e1e; /* 黑色背景 */
+    border-radius: 8px; /* 添加边角圆润效果 */
+}
+
+#header-image {
+    max-width: 90%; /* 设置图片最大宽度 */
+    height: auto; /* 保持高度比例 */
+    margin-bottom: 0; /* 去掉与下方内容的间距 */
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5px; /* 减少下方间距 */
+}
+
+label {
+    margin-bottom: 2px; /* 减少标签与输入框间距 */
+    font-size: 14px;
+    color: #cccccc; /* 标签采用浅灰色 */
+}
+
+input[type="text"] {
+    max-width: 250px; /* 设置最大宽度 */
+    padding: 6px; /* 保持内边距 */
+    border-radius: 5px;
+    border: 1px solid #555; /* 增强边框可见性 */
+    background-color: #333; /* 深灰色背景 */
+    color: white; /* 字体颜色为白色 */
+    font-size: 12px; /* 保持字体大小不变 */
+}
+
+button {
+    background: linear-gradient(to right, #555, #888); /* 用较暗的渐变色替代 */
+    border: none;
+    color: white; /* 保持按钮字体为白色 */
+    padding: 10px;
+    margin: 5px 0; /* 保持与其他元素间距一致 */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%; /* 维持主按钮的一致性 */
+    text-align: center;
+}
+
+button:hover {
+    background: linear-gradient(to left, #888, #aaa); /* 改变悬停状态的色彩 */
+}
+
+#website-list {
+    width: 100%;
+    margin-top: 10px; /* 稍微减少顶端的间距 */
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column; /* 改为纵向布局，先显示名称 */
+    padding: 4px; /* 减少内边距，保持元素集中的感觉 */
+    border-bottom: 1px solid #444; /* 深灰色分隔线 */
+    margin-bottom: 5px; /* 减少下方间距 */
+}
+
+.item-name {
+    flex-grow: 1; /* 允许名称占用剩余空间 */
+    color: #ffffff; /* 名称颜色 */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0; /* 去掉不必要的竖向内边距 */
+    margin-bottom: 2px; /* 减少名称与分数/按钮组之间的间隔 */
+}
+
+/* 分数和按钮组的设置 */
+.score {
+    font-weight: bold;
+    color: #cccccc; /* 分数语言为浅灰色 */
+    background-color: #444; /* 深灰色背景 */
+    padding: 2px 4px; /* 保持内边距 */
+    margin-right: 5px; /* 减少右侧间距 */
+    min-width: 60px; /* 设置最小宽度以保持一致性 */
+    text-align: center; /* 文本居中 */
+}
+
+.button-group {
+    display: flex; /* 设置为 flex 布局 */
+    align-items: center; /* 垂直居中 */
+    margin-top: 2px; /* 减少上间距 */
+}
+
+/* 按钮的设置 */
+.update-btn, .delete-btn {
+    background: linear-gradient(to right, #555, #888); /* 采用渐变色 */
+    border: none;
+    color: white;
+    padding: 4px 8px; /* 确保按钮内边距一致 */
+    margin-left: 3px; /* 减少左侧间距 */
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    flex-shrink: 0; /* 确保按钮不会拉伸 */
+    font-size: 12px; /* 调整字体大小以保证可见性 */
+    min-width: 40px; /* 设置最小宽度以保持一致性 */
+    max-width: 80px; /* 设置最大宽度，防止过宽 */
+    text-align: center; /* 文本居中 */
+}
+
+.update-all-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: linear-gradient(to right, #555, #888); /* 保持一致的按钮样式 */
+}
